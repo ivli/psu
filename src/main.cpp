@@ -1,7 +1,14 @@
 #include <Arduino.h>
+
+#if !defined(STM32F411xE)
 #include "stm32f1xx_hal.h"
-///#include "stm32f103xe.h"
 #include "stm32f1xx.h"
+#else
+#include "stm32f4xx_hal.h"
+#include "stm32f4xx.h"
+#endif
+
+
 #include "interrupt.h"
 
 
